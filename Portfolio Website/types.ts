@@ -1,27 +1,28 @@
-import React from "react";
+// src/types.ts
 
 export interface Project {
   id: string;
   title: string;
   description: string;
-  imageUrl?: string; // Optional image for the project
+  imageUrl: string | undefined; // It's okay to have undefined here if you handle it in your components
   tags: string[];
-  liveUrl?: string;
-  sourceUrl?: string;
+  liveUrl: string;
+  sourceUrl: string;
 }
 
 export interface Skill {
   id: string;
   name: string;
-  level?: number; // Optional: proficiency level (e.g., 1-100 for a progress bar)
-  category: "Frontend" | "Backend" | "Tools" | "Languages" | "Other";
+  level: number;
+  category: "Languages" | "Frontend" | "Backend" | "Tools" | "Other";
 }
 
 export interface ContactLink {
   id: string;
   name: string;
   url: string;
-  icon?: React.ReactNode; // For social media icons etc.
+  // If you plan to use icons, you might add:
+  // icon?: React.ReactNode;
 }
 
 export interface Experience {
