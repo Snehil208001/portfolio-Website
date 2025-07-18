@@ -1,34 +1,23 @@
-// src/types.ts
-
 export interface Project {
   id: string;
   title: string;
   description: string;
-  imageUrl: string | undefined; // It's okay to have undefined here if you handle it in your components
+  imageUrl?: string; // Optional image for the project
   tags: string[];
-  liveUrl: string;
-  sourceUrl: string;
+  liveUrl?: string;
+  sourceUrl?: string;
 }
 
 export interface Skill {
   id: string;
   name: string;
-  level: number;
-  category: "Languages" | "Frontend" | "Backend" | "Tools" | "Other";
+  level?: number; // Optional: proficiency level (e.g., 1-5 or 1-100 for a progress bar)
+  category: 'Frontend' | 'Backend' | 'Tools' | 'Languages' | 'Other';
 }
 
 export interface ContactLink {
   id: string;
   name: string;
   url: string;
-  // If you plan to use icons, you might add:
-  // icon?: React.ReactNode;
-}
-
-export interface Experience {
-  id: string;
-  company: string;
-  role: string;
-  duration: string;
-  description: string;
+  icon?: React.ReactNode; // For social media icons etc.
 }
