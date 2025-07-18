@@ -1,4 +1,4 @@
-import { Project, Skill, ContactLink } from "./types";
+import { Project, Skill, ContactLink, Experience } from "./types";
 
 // --- PERSONALIZATION ---
 // Replace these with your actual details.
@@ -11,10 +11,22 @@ export const YOUR_EMAIL = "snehil09087@gmail.com";
 // --- NAVIGATION ---
 export const NAV_LINKS = [
   { id: "about", title: "About", href: "#about" },
+  { id: "experience", title: "Experience", href: "#experience" },
   { id: "skills", title: "Skills", href: "#skills" },
   { id: "projects", title: "Projects", href: "#projects" },
   { id: "contact", title: "Contact", href: "#contact" },
 ];
+
+// --- EXPERIENCE ---
+export const EXPERIENCE_DATA: Experience[] = [
+    {
+        id: "chamberly-ab",
+        company: "Chamberly AB",
+        role: "Android Developer",
+        duration: "July 2025 - Present",
+        description: "As an Android Developer at Chamberly AB, I am responsible for developing and maintaining our Android application. My key responsibilities include building new features, fixing bugs, and improving application performance. I work closely with the design and product teams to create a seamless user experience. I am passionate about writing clean, efficient, and maintainable code."
+    }
+]
 
 // --- PROJECTS ---
 // Add your projects here.
@@ -23,7 +35,7 @@ export const PROJECTS_DATA: Project[] = [
     id: "project-SwipeRightly",
     title: "SwipeRightly - Android Dating App",
     description: `📱 SwipeRightly App – Real-Time Dating App with Firebase & Jetpack Compose
-SwipeRightly is a fully functional dating app designed to demonstrate a modern Android development workflow using Jetpack Compose, MVVM architecture, and Firebase for real-time features. It offers an intuitive swiping experience, secure user authentication, and live chat—all backed by scalable cloud infrastructure.
+SwipeRightly is a fully functional dating app designed to demonstrate a modern Android development workflow using Jetpack Compose, MVVM architecture, and Firebase for real-time features. It offers an intuitive swiping experience, secure user authentication, and live chat—all backed by a scalable cloud infrastructure.
 
 🧠 Architecture & Tech Stack
 Built on the MVVM pattern, the app separates UI, logic, and data layers cleanly:
@@ -163,9 +175,33 @@ export const SKILLS_DATA: Skill[] = [
 
   // Backend & APIs
   {
-    id: "firebase",
-    name: "Firebase (Auth, Firestore, Storage)",
+    id: "firebase-auth",
+    name: "Firebase Authentication",
     level: 85,
+    category: "Backend",
+  },
+  {
+    id: "cloud-firestore",
+    name: "Cloud Firestore",
+    level: 85,
+    category: "Backend",
+  },
+  {
+    id: "firebase-realtimedb",
+    name: "Firebase Realtime Database",
+    level: 80,
+    category: "Backend",
+  },
+  {
+    id: "firebase-storage",
+    name: "Firebase Storage",
+    level: 80,
+    category: "Backend",
+  },
+  {
+    id: "fcm",
+    name: "Firebase Cloud Messaging",
+    level: 80,
     category: "Backend",
   },
   { id: "retrofit", name: "Retrofit", level: 80, category: "Backend" },
