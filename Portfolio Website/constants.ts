@@ -13,12 +13,14 @@ export const YOUR_EMAIL = "snehil09087@gmail.com";
 export const EXPERIENCES_DATA = [
   {
     company: "Chamberl ab Chamberly",
-    role: "Android Developer",
-    duration: "July 2025 - Present",
+ role: "Android Developer",
+ duration: "July to Present",
     description:
-      "Chamberly is a Swedish mobile app company on a mission to make mental health support more gamified, accessible and stigma-free. Through our platform, users can connect anonymously with trained listeners to share their thoughts, feelings, and challenges. With over 100,000 downloads and a 4.8+ ratings globally, Chamberly is already making a meaningful difference in how people seek support. We sometimes call Chamberly the tinder of mental health due to its highly interactive UI that connects listeners with users that want to vent about certain topics. Chamberly isn’t just your typical mental health platform, it’s a place to find your permanent emotional well-being partner that shares the same interest and life experiences as you, allowing users to wander off with their new found best friend. We are made up of young founders and highly passionate and healthy squads, that leverage the latest AI technologies to build powerful features that make Chamberly a safe, highly-effective and fun place to be in.",
+ "Chamberly is a Swedish mobile app company on a mission to make mental health support more gamified, accessible and stigma-free. Through our platform, users can connect anonymously with trained listeners to share their thoughts, feelings, and challenges.\n\nCheck out this 15 seconds ad: https://www.instagram.com/p/C6TwmHztGiD/\n\nWith over 100,000 downloads and a 4.8+ ratings globally, Chamberly is already making a meaningful difference in how people seek support. We sometimes call Chamberly the tinder of mental health due to its highly interactive UI that connects listeners with users that want to vent about certain topics. Chamberly isn’t just your typical mental health platform, it’s a place to find your permanent emotional well-being partner that shares the same interest and life experiences as you, allowing users to wander off with their new found best friend. We are made up of young founders and highly passionate and healthy squads, that leverage the latest AI technologies to build powerful features that make Chamberly a safe, highly-effective and fun place to be in.",
   },
 ];
+
+
 
 
 // --- NAVIGATION ---
@@ -167,6 +169,24 @@ export const SKILLS_DATA: Skill[] = [
 
   // Frontend (Android Specific)
   {
+    id: "firebase-auth",
+    name: "Firebase auth",
+    level: 85,
+    category: "Frontend",
+  },
+  {
+    id: "cloud-firestore",
+    name: "cloud firestore",
+    level: 85,
+    category: "Frontend",
+  },
+  {
+    id: "realtime-database",
+    name: "realtime database",
+    level: 85,
+    category: "Frontend",
+  },
+  {
     id: "jetpack-compose",
     name: "Jetpack Compose",
     level: 90,
@@ -178,26 +198,6 @@ export const SKILLS_DATA: Skill[] = [
   {
     id: "firebase",
     name: "Firebase (Auth, Firestore, Storage)",
-    level: 85,
-    category: "Backend",
-  },
-  {
-    id: "firebase-auth",
-    name: "Firebase Auth",
-    level: 85,
-    category: "Backend",
-  },
-  {
-    id: "cloud-firestore",
-    name: "Cloud Firestore",
-    level: 85,
-    category: "Backend",
-  },
-  { id: "retrofit", name: "Retrofit", level: 80, category: "Backend" },
-  { id: "ktor-client", name: "Ktor (Client)", level: 70, category: "Backend" },
-  {
-    id: "rest-apis",
-    name: "REST APIs / API Calling",
     level: 85,
     category: "Backend",
   },
