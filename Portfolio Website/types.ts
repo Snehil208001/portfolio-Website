@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface Project {
   id: string;
   title: string;
@@ -11,8 +13,8 @@ export interface Project {
 export interface Skill {
   id: string;
   name: string;
-  level?: number; // Optional: proficiency level (e.g., 1-5 or 1-100 for a progress bar)
-  category: 'Frontend' | 'Backend' | 'Tools' | 'Languages' | 'Other';
+  level?: number; // Optional: proficiency level (e.g., 1-100 for a progress bar)
+  category: "Frontend" | "Backend" | "Tools" | "Languages" | "Other";
 }
 
 export interface ContactLink {
@@ -20,4 +22,12 @@ export interface ContactLink {
   name: string;
   url: string;
   icon?: React.ReactNode; // For social media icons etc.
+}
+
+export interface Experience {
+  id: string;
+  company: string;
+  role: string;
+  duration: string;
+  description: string;
 }

@@ -5,7 +5,7 @@ import { Project, Skill, ContactLink, Experience } from "./types";
 export const YOUR_NAME = "Snehil";
 export const YOUR_HEADLINE =
   "Android App Developer | Passionate Developer | Creative Thinker | Problem Solver";
-export const YOUR_BIO = `Hello! I'm ${YOUR_NAME}, an Android App Developer based in [Your Location]. I graduated from Bharati Vidyapeeth College of Engineering Deemed University, Pune, and I specialize in building dynamic and user-friendly mobile applications. I'm passionate about creating intuitive experiences and continuously learning new technologies. In my free time, I enjoy Guitar and Singing and Cooking.`;
+export const YOUR_BIO = `Hello! I'm ${YOUR_NAME}, an Android App Developer. I graduated from Bharati Vidyapeeth College of Engineering Deemed University, Pune, and I specialize in building dynamic and user-friendly mobile applications. I'm passionate about creating intuitive experiences and continuously learning new technologies. In my free time, I enjoy Guitar and Singing and Cooking.`;
 export const YOUR_EMAIL = "snehil09087@gmail.com";
 
 // --- NAVIGATION ---
@@ -19,14 +19,15 @@ export const NAV_LINKS = [
 
 // --- EXPERIENCE ---
 export const EXPERIENCE_DATA: Experience[] = [
-    {
-        id: "chamberly-ab",
-        company: "Chamberly AB",
-        role: "Android Developer",
-        duration: "July 2025 - Present",
-        description: "As an Android Developer at Chamberly AB, I am responsible for developing and maintaining our Android application. My key responsibilities include building new features, fixing bugs, and improving application performance. I work closely with the design and product teams to create a seamless user experience. I am passionate about writing clean, efficient, and maintainable code."
-    }
-]
+  {
+    id: "chamberly-ab",
+    company: "Chamberly AB",
+    role: "Android Developer",
+    duration: "July 2024 - Present",
+    description:
+      "As an Android Developer at Chamberly AB, I am responsible for developing and maintaining our Android application. My key responsibilities include building new features, fixing bugs, and improving application performance. I work closely with the design and product teams to create a seamless user experience. I am passionate about writing clean, efficient, and maintainable code.",
+  },
+];
 
 // --- PROJECTS ---
 // Add your projects here.
